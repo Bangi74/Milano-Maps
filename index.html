@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d0a9dc46c03d0629550e6e2b502ddcc4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d0a9dc46c03d0629550e6e2b502ddcc4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d0a9dc46c03d0629550e6e2b502ddcc4 = L.map(
+                "map_d0a9dc46c03d0629550e6e2b502ddcc4",
+                {
+                    center: [45.4675, 9.19],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4804b16535da1f5bf9e0a501c5dad345 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d0a9dc46c03d0629550e6e2b502ddcc4);
+        
+    
+            var marker_6d0901497dc02e0603cc6c7153c80f03 = L.marker(
+                [45.4846, 9.2034],
+                {}
+            ).addTo(map_d0a9dc46c03d0629550e6e2b502ddcc4);
+        
+    
+            var icon_8816e2032cdcf74c291f1e75e007f9d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_6d0901497dc02e0603cc6c7153c80f03.setIcon(icon_8816e2032cdcf74c291f1e75e007f9d5);
+        
+    
+        var popup_295592a7545844996a58a043493de20a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bbfb10efd85ae8aa7512af5bd65496f = $(`<div id="html_4bbfb10efd85ae8aa7512af5bd65496f" style="width: 100.0%; height: 100.0%;">Padiglione Reale – Piazza Luigi di Savoia, 1 / Binario 21</div>`)[0];
+            popup_295592a7545844996a58a043493de20a.setContent(html_4bbfb10efd85ae8aa7512af5bd65496f);
+        
+
+        marker_6d0901497dc02e0603cc6c7153c80f03.bindPopup(popup_295592a7545844996a58a043493de20a)
+        ;
+
+        
+    
+    
+            marker_6d0901497dc02e0603cc6c7153c80f03.bindTooltip(
+                `<div>
+                     Padiglione Reale – Piazza Luigi di Savoia, 1 / Binario 21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3e7067afe2374a61c78a600bc0c1fd7 = L.marker(
+                [45.4624, 9.1956],
+                {}
+            ).addTo(map_d0a9dc46c03d0629550e6e2b502ddcc4);
+        
+    
+            var icon_974a4d5601e09374169fcaac5c61de67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f3e7067afe2374a61c78a600bc0c1fd7.setIcon(icon_974a4d5601e09374169fcaac5c61de67);
+        
+    
+        var popup_6fc6794a9325569c9a8573c878082cce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d03544ec77e16cbadcb4425c31f52a9 = $(`<div id="html_1d03544ec77e16cbadcb4425c31f52a9" style="width: 100.0%; height: 100.0%;">Teatro Lirico Giorgio Gaber – Via Larga 14</div>`)[0];
+            popup_6fc6794a9325569c9a8573c878082cce.setContent(html_1d03544ec77e16cbadcb4425c31f52a9);
+        
+
+        marker_f3e7067afe2374a61c78a600bc0c1fd7.bindPopup(popup_6fc6794a9325569c9a8573c878082cce)
+        ;
+
+        
+    
+    
+            marker_f3e7067afe2374a61c78a600bc0c1fd7.bindTooltip(
+                `<div>
+                     Teatro Lirico Giorgio Gaber – Via Larga 14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd9207021eafb55087472ce948e522ad = L.marker(
+                [45.4778, 9.202],
+                {}
+            ).addTo(map_d0a9dc46c03d0629550e6e2b502ddcc4);
+        
+    
+            var icon_9b9c9554108cff6baf508dcb9f29e85c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_dd9207021eafb55087472ce948e522ad.setIcon(icon_9b9c9554108cff6baf508dcb9f29e85c);
+        
+    
+        var popup_8e737384cea391a8204371db06424cac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b5a0d1908fc394b60b1b3e2c5e0df2f = $(`<div id="html_1b5a0d1908fc394b60b1b3e2c5e0df2f" style="width: 100.0%; height: 100.0%;">Piscina Cozzi – Viale Tunisia 35</div>`)[0];
+            popup_8e737384cea391a8204371db06424cac.setContent(html_1b5a0d1908fc394b60b1b3e2c5e0df2f);
+        
+
+        marker_dd9207021eafb55087472ce948e522ad.bindPopup(popup_8e737384cea391a8204371db06424cac)
+        ;
+
+        
+    
+    
+            marker_dd9207021eafb55087472ce948e522ad.bindTooltip(
+                `<div>
+                     Piscina Cozzi – Viale Tunisia 35
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84e6000103e3a7182a8262784a2eac89 = L.marker(
+                [45.462, 9.2015],
+                {}
+            ).addTo(map_d0a9dc46c03d0629550e6e2b502ddcc4);
+        
+    
+            var icon_175be6fcf7f2c94e7e4f25fb1dd24030 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_84e6000103e3a7182a8262784a2eac89.setIcon(icon_175be6fcf7f2c94e7e4f25fb1dd24030);
+        
+    
+        var popup_0c56c238efbac6449fe4d37b838abab3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba67232d1f183fa47da5c01665e64580 = $(`<div id="html_ba67232d1f183fa47da5c01665e64580" style="width: 100.0%; height: 100.0%;">Istituto dei Ciechi – Via Vivaio 7</div>`)[0];
+            popup_0c56c238efbac6449fe4d37b838abab3.setContent(html_ba67232d1f183fa47da5c01665e64580);
+        
+
+        marker_84e6000103e3a7182a8262784a2eac89.bindPopup(popup_0c56c238efbac6449fe4d37b838abab3)
+        ;
+
+        
+    
+    
+            marker_84e6000103e3a7182a8262784a2eac89.bindTooltip(
+                `<div>
+                     Istituto dei Ciechi – Via Vivaio 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f44fb720f57ff7c7c6bfeb0fa36dc2f2 = L.marker(
+                [45.4654, 9.1757],
+                {}
+            ).addTo(map_d0a9dc46c03d0629550e6e2b502ddcc4);
+        
+    
+            var icon_3209cd0277dad5b165b744dc82f5d8a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f44fb720f57ff7c7c6bfeb0fa36dc2f2.setIcon(icon_3209cd0277dad5b165b744dc82f5d8a7);
+        
+    
+        var popup_5db2e0a5c7cf45a8170514f430e856a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6efc0b74626146b327a0f5a5ddf430c7 = $(`<div id="html_6efc0b74626146b327a0f5a5ddf430c7" style="width: 100.0%; height: 100.0%;">Palazzo Litta – Corso Magenta 24</div>`)[0];
+            popup_5db2e0a5c7cf45a8170514f430e856a3.setContent(html_6efc0b74626146b327a0f5a5ddf430c7);
+        
+
+        marker_f44fb720f57ff7c7c6bfeb0fa36dc2f2.bindPopup(popup_5db2e0a5c7cf45a8170514f430e856a3)
+        ;
+
+        
+    
+    
+            marker_f44fb720f57ff7c7c6bfeb0fa36dc2f2.bindTooltip(
+                `<div>
+                     Palazzo Litta – Corso Magenta 24
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13c198f589831cc5c6440cb3137b80e8 = L.marker(
+                [45.4666, 9.1975],
+                {}
+            ).addTo(map_d0a9dc46c03d0629550e6e2b502ddcc4);
+        
+    
+            var icon_97b81df3d62c9970fc13f50ba03bb00f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_13c198f589831cc5c6440cb3137b80e8.setIcon(icon_97b81df3d62c9970fc13f50ba03bb00f);
+        
+    
+        var popup_c90e9b1c81f2779d6a9292070f5cd4ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41cde5748ecf81ce7cff3c27e4a0a1dc = $(`<div id="html_41cde5748ecf81ce7cff3c27e4a0a1dc" style="width: 100.0%; height: 100.0%;">Palazzo Durini – Via Durini 24</div>`)[0];
+            popup_c90e9b1c81f2779d6a9292070f5cd4ef.setContent(html_41cde5748ecf81ce7cff3c27e4a0a1dc);
+        
+
+        marker_13c198f589831cc5c6440cb3137b80e8.bindPopup(popup_c90e9b1c81f2779d6a9292070f5cd4ef)
+        ;
+
+        
+    
+    
+            marker_13c198f589831cc5c6440cb3137b80e8.bindTooltip(
+                `<div>
+                     Palazzo Durini – Via Durini 24
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
