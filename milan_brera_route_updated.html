@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4760c1fade9e724f6e7d539dde28b87a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4760c1fade9e724f6e7d539dde28b87a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4760c1fade9e724f6e7d539dde28b87a = L.map(
+                "map_4760c1fade9e724f6e7d539dde28b87a",
+                {
+                    center: [45.4708, 9.1927],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_23637e17e64825a147e9a6e04b2fffdd = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4760c1fade9e724f6e7d539dde28b87a);
+        
+    
+            var marker_4c5b0bc408c5376526f3ced42e523565 = L.marker(
+                [45.4708, 9.1927],
+                {}
+            ).addTo(map_4760c1fade9e724f6e7d539dde28b87a);
+        
+    
+            var icon_d72d07940e7835027ca183cac1824489 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4c5b0bc408c5376526f3ced42e523565.setIcon(icon_d72d07940e7835027ca183cac1824489);
+        
+    
+            marker_4c5b0bc408c5376526f3ced42e523565.bindTooltip(
+                `<div>
+                     Palazzo Molteni - Via Manzoni 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88f410a646a3f063e4770e4dbdf08ccb = L.marker(
+                [45.4741, 9.1883],
+                {}
+            ).addTo(map_4760c1fade9e724f6e7d539dde28b87a);
+        
+    
+            var icon_6d47f7b72d9b613237d41214e472639e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_88f410a646a3f063e4770e4dbdf08ccb.setIcon(icon_6d47f7b72d9b613237d41214e472639e);
+        
+    
+            marker_88f410a646a3f063e4770e4dbdf08ccb.bindTooltip(
+                `<div>
+                     Molteni&C - Via Solferino, Angolo Via Pontaccio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d44d6e75772f46802f274715c1c0a9f = L.marker(
+                [45.4749, 9.1869],
+                {}
+            ).addTo(map_4760c1fade9e724f6e7d539dde28b87a);
+        
+    
+            var icon_91da9e2fc3f69bf1c980145b30e4bb06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1d44d6e75772f46802f274715c1c0a9f.setIcon(icon_91da9e2fc3f69bf1c980145b30e4bb06);
+        
+    
+            marker_1d44d6e75772f46802f274715c1c0a9f.bindTooltip(
+                `<div>
+                     Molteni&C - Via Solferino 26
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f306cd0389047eb339b745256caed1c6 = L.marker(
+                [45.4758, 9.1854],
+                {}
+            ).addTo(map_4760c1fade9e724f6e7d539dde28b87a);
+        
+    
+            var icon_bd26f2935ed6d6839b89b775e47959e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f306cd0389047eb339b745256caed1c6.setIcon(icon_bd26f2935ed6d6839b89b775e47959e7);
+        
+    
+            marker_f306cd0389047eb339b745256caed1c6.bindTooltip(
+                `<div>
+                     Gucci | Bamboo Encounters - Chiostri di San Simpliciano, Piazza Paolo VI 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84dc86e5129d252a72980694fdb19572 = L.marker(
+                [45.4723, 9.1814],
+                {}
+            ).addTo(map_4760c1fade9e724f6e7d539dde28b87a);
+        
+    
+            var icon_82ce873bba7b9dfb9559c598fb195baa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_84dc86e5129d252a72980694fdb19572.setIcon(icon_82ce873bba7b9dfb9559c598fb195baa);
+        
+    
+            marker_84dc86e5129d252a72980694fdb19572.bindTooltip(
+                `<div>
+                     Fondazione Matalon - Foro Buonaparte 67
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fc83fe9a5990a4cb0ec9db7992a3360 = L.marker(
+                [45.4767, 9.1889],
+                {}
+            ).addTo(map_4760c1fade9e724f6e7d539dde28b87a);
+        
+    
+            var icon_988a21205fd3179ca5a67ec0cdb1ef19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4fc83fe9a5990a4cb0ec9db7992a3360.setIcon(icon_988a21205fd3179ca5a67ec0cdb1ef19);
+        
+    
+            marker_4fc83fe9a5990a4cb0ec9db7992a3360.bindTooltip(
+                `<div>
+                     MUJI MUJI 5∙5 - Giardino Pippa Bacca, Via Tommaso de Cazzaniga
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2932f0e928b9796c7b2d2ab919b6bc8 = L.marker(
+                [45.4775, 9.1872],
+                {}
+            ).addTo(map_4760c1fade9e724f6e7d539dde28b87a);
+        
+    
+            var icon_9465c68bf6c01b369ea23aaf8729346d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e2932f0e928b9796c7b2d2ab919b6bc8.setIcon(icon_9465c68bf6c01b369ea23aaf8729346d);
+        
+    
+            marker_e2932f0e928b9796c7b2d2ab919b6bc8.bindTooltip(
+                `<div>
+                     Via Palermo 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fde60a34f603567ddddba529a75f1e2 = L.marker(
+                [45.4779, 9.1863],
+                {}
+            ).addTo(map_4760c1fade9e724f6e7d539dde28b87a);
+        
+    
+            var icon_2b410cb94f9d10395a786a2bc3b44dbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4fde60a34f603567ddddba529a75f1e2.setIcon(icon_2b410cb94f9d10395a786a2bc3b44dbc);
+        
+    
+            marker_4fde60a34f603567ddddba529a75f1e2.bindTooltip(
+                `<div>
+                     House of Switzerland - Casa degli Artisti, Via Tommaso da Cazzaniga, Ecke Corso Garibaldi, 89/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cca6ab5f3052afb929e9b37ce6342651 = L.marker(
+                [45.4704, 9.1849],
+                {}
+            ).addTo(map_4760c1fade9e724f6e7d539dde28b87a);
+        
+    
+            var icon_d8ea19f885e6c29fcc70fda032ce94ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cca6ab5f3052afb929e9b37ce6342651.setIcon(icon_d8ea19f885e6c29fcc70fda032ce94ef);
+        
+    
+            marker_cca6ab5f3052afb929e9b37ce6342651.bindTooltip(
+                `<div>
+                     Florim Flagship Store - Foro Buonaparte 14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31504c5ef89dbb2ebe7420eeca3bca81 = L.marker(
+                [45.477, 9.1879],
+                {}
+            ).addTo(map_4760c1fade9e724f6e7d539dde28b87a);
+        
+    
+            var icon_1891dd9578c540512e2d791087046d4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_31504c5ef89dbb2ebe7420eeca3bca81.setIcon(icon_1891dd9578c540512e2d791087046d4c);
+        
+    
+            marker_31504c5ef89dbb2ebe7420eeca3bca81.bindTooltip(
+                `<div>
+                     Florim - Via San Marco 14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f81c86873b59956426f2275c55e65178 = L.polyline(
+                [[45.4708, 9.1927], [45.4741, 9.1883], [45.4749, 9.1869], [45.4758, 9.1854], [45.4723, 9.1814], [45.4767, 9.1889], [45.4775, 9.1872], [45.4779, 9.1863], [45.4704, 9.1849], [45.477, 9.1879]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_4760c1fade9e724f6e7d539dde28b87a);
+        
+</script>
+</html>

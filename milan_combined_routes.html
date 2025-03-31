@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_eb8c0845efc4474ed63fbf36679be9d0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_eb8c0845efc4474ed63fbf36679be9d0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_eb8c0845efc4474ed63fbf36679be9d0 = L.map(
+                "map_eb8c0845efc4474ed63fbf36679be9d0",
+                {
+                    center: [45.4675, 9.19],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a17f31f29129d2a8fbf5521a2ebc5d9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var poly_line_695e77197e16800c9d0ca7194f73c446 = L.polyline(
+                [[45.4742, 9.2072], [45.4725, 9.2153], [45.4729, 9.2041], [45.4695, 9.1993], [45.4782, 9.2034], [45.4702, 9.1995]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            poly_line_695e77197e16800c9d0ca7194f73c446.bindTooltip(
+                `<div>
+                     Via Durini Events Route
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e49430641b59f802e41baa464aaf0d8c = L.polyline(
+                [[45.4708, 9.1927], [45.4741, 9.1883], [45.4749, 9.1869], [45.4758, 9.1854], [45.4723, 9.1814], [45.4767, 9.1889], [45.4775, 9.1872], [45.4779, 9.1863], [45.4704, 9.1849], [45.477, 9.1879]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            poly_line_e49430641b59f802e41baa464aaf0d8c.bindTooltip(
+                `<div>
+                     Brera Design District Route
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_af8c272e4680b2c5838c6437878115b0 = L.polyline(
+                [[45.4666, 9.1959], [45.4665, 9.1968], [45.4659, 9.1951], [45.4667, 9.1971], [45.4666, 9.1962], [45.4654, 9.1938], [45.4629, 9.1847], [45.4652, 9.1923]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            poly_line_af8c272e4680b2c5838c6437878115b0.bindTooltip(
+                `<div>
+                     Via Durini Furniture Route
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5453847d82ea50e3cd129e6bffc4ed1a = L.marker(
+                [45.4708, 9.1927],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_d9f11115859b94e6b43c2e03faeb62b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5453847d82ea50e3cd129e6bffc4ed1a.setIcon(icon_d9f11115859b94e6b43c2e03faeb62b2);
+        
+    
+            marker_5453847d82ea50e3cd129e6bffc4ed1a.bindTooltip(
+                `<div>
+                     Palazzo Molteni - Via Manzoni 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46c12a7cb7295ed0f9eea23681ede7b0 = L.marker(
+                [45.4741, 9.1883],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_8982a83605705ab6c5d7fcf4044f4e1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_46c12a7cb7295ed0f9eea23681ede7b0.setIcon(icon_8982a83605705ab6c5d7fcf4044f4e1c);
+        
+    
+            marker_46c12a7cb7295ed0f9eea23681ede7b0.bindTooltip(
+                `<div>
+                     Molteni&C - Via Solferino, Angolo Via Pontaccio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18e24a136d0638cb198a45bb3da12154 = L.marker(
+                [45.4749, 9.1869],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_4c774dfc7f8d46f8762b864f8dcfd4c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_18e24a136d0638cb198a45bb3da12154.setIcon(icon_4c774dfc7f8d46f8762b864f8dcfd4c3);
+        
+    
+            marker_18e24a136d0638cb198a45bb3da12154.bindTooltip(
+                `<div>
+                     Molteni&C - Via Solferino 26
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc776749f8daffc5642c84e0daeda235 = L.marker(
+                [45.4758, 9.1854],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_2edaf03b12931dd5f4be774c79451608 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bc776749f8daffc5642c84e0daeda235.setIcon(icon_2edaf03b12931dd5f4be774c79451608);
+        
+    
+            marker_bc776749f8daffc5642c84e0daeda235.bindTooltip(
+                `<div>
+                     Gucci | Bamboo Encounters - Chiostri di San Simpliciano, Piazza Paolo VI 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43e2ebe7b0d066e8e70bf72414a325ca = L.marker(
+                [45.4723, 9.1814],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_109835025d5c491e8312a9c5bdbecd06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_43e2ebe7b0d066e8e70bf72414a325ca.setIcon(icon_109835025d5c491e8312a9c5bdbecd06);
+        
+    
+            marker_43e2ebe7b0d066e8e70bf72414a325ca.bindTooltip(
+                `<div>
+                     Fondazione Matalon - Foro Buonaparte 67
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69967674817c28028703b4275cb72002 = L.marker(
+                [45.4767, 9.1889],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_13ffe1f1a928217f4759b61cbf35e964 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_69967674817c28028703b4275cb72002.setIcon(icon_13ffe1f1a928217f4759b61cbf35e964);
+        
+    
+            marker_69967674817c28028703b4275cb72002.bindTooltip(
+                `<div>
+                     MUJI MUJI 5∙5 - Giardino Pippa Bacca, Via Tommaso de Cazzaniga
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6073562ddc91ed0e621374d837900a5a = L.marker(
+                [45.4775, 9.1872],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_3b8822c82cd817d99d38208fe1a199d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6073562ddc91ed0e621374d837900a5a.setIcon(icon_3b8822c82cd817d99d38208fe1a199d1);
+        
+    
+            marker_6073562ddc91ed0e621374d837900a5a.bindTooltip(
+                `<div>
+                     Via Palermo 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0301e65977b8ced681cb0791a436fcc4 = L.marker(
+                [45.4779, 9.1863],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_73b84ee9f1f567bc13aab46fcf23fe54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0301e65977b8ced681cb0791a436fcc4.setIcon(icon_73b84ee9f1f567bc13aab46fcf23fe54);
+        
+    
+            marker_0301e65977b8ced681cb0791a436fcc4.bindTooltip(
+                `<div>
+                     House of Switzerland - Casa degli Artisti, Via Tommaso da Cazzaniga, Ecke Corso Garibaldi, 89/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c076cf860789b303d1e6d572d9aab97 = L.marker(
+                [45.4704, 9.1849],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_b6ee75518b69497464b41f5bc38eeee8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c076cf860789b303d1e6d572d9aab97.setIcon(icon_b6ee75518b69497464b41f5bc38eeee8);
+        
+    
+            marker_3c076cf860789b303d1e6d572d9aab97.bindTooltip(
+                `<div>
+                     Florim Flagship Store - Foro Buonaparte 14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd98af220b0fa9811bbf3ab022189ffc = L.marker(
+                [45.477, 9.1879],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_155f9af6616cf71a5e21688c9eae6dda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd98af220b0fa9811bbf3ab022189ffc.setIcon(icon_155f9af6616cf71a5e21688c9eae6dda);
+        
+    
+            marker_fd98af220b0fa9811bbf3ab022189ffc.bindTooltip(
+                `<div>
+                     Florim - Via San Marco 14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1f576074ddf4c4b82cdb373d6c0eda7 = L.marker(
+                [45.4742, 9.2072],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_feefaa14b175ef174e8754334bddd25e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b1f576074ddf4c4b82cdb373d6c0eda7.setIcon(icon_feefaa14b175ef174e8754334bddd25e);
+        
+    
+            marker_b1f576074ddf4c4b82cdb373d6c0eda7.bindTooltip(
+                `<div>
+                     Via Durini Event
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf067ac7e85c5ddcde6361a1b299ada9 = L.marker(
+                [45.4725, 9.2153],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_c7e106bce11b8c7a37baebb02ec5bbff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bf067ac7e85c5ddcde6361a1b299ada9.setIcon(icon_c7e106bce11b8c7a37baebb02ec5bbff);
+        
+    
+            marker_bf067ac7e85c5ddcde6361a1b299ada9.bindTooltip(
+                `<div>
+                     Via Durini Event
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d55685d92584ccf0c476e323ecbb160 = L.marker(
+                [45.4729, 9.2041],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_df2a30696222c439cd90944acdb7d268 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d55685d92584ccf0c476e323ecbb160.setIcon(icon_df2a30696222c439cd90944acdb7d268);
+        
+    
+            marker_9d55685d92584ccf0c476e323ecbb160.bindTooltip(
+                `<div>
+                     Via Durini Event
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82f28aef7fe33f28e14caf2c6dd6a5a0 = L.marker(
+                [45.4695, 9.1993],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_af51417cb9a4c94bb40a1823dd428134 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_82f28aef7fe33f28e14caf2c6dd6a5a0.setIcon(icon_af51417cb9a4c94bb40a1823dd428134);
+        
+    
+            marker_82f28aef7fe33f28e14caf2c6dd6a5a0.bindTooltip(
+                `<div>
+                     Via Durini Event
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_839f8611643895ffa05f006759f666bd = L.marker(
+                [45.4782, 9.2034],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_7cbe4be5f8eadca87cff44d18da7b5ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_839f8611643895ffa05f006759f666bd.setIcon(icon_7cbe4be5f8eadca87cff44d18da7b5ca);
+        
+    
+            marker_839f8611643895ffa05f006759f666bd.bindTooltip(
+                `<div>
+                     Via Durini Event
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd4fe46b6e869fe2bb8e2bef216264f5 = L.marker(
+                [45.4702, 9.1995],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_77e0baf818d2bbd4c4b3269b67f0ed6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dd4fe46b6e869fe2bb8e2bef216264f5.setIcon(icon_77e0baf818d2bbd4c4b3269b67f0ed6f);
+        
+    
+            marker_dd4fe46b6e869fe2bb8e2bef216264f5.bindTooltip(
+                `<div>
+                     Via Durini Event
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a116a630255b8272664aee6f1965f4e5 = L.marker(
+                [45.4666, 9.1959],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_abee14c1280fd04b17461c537f55945d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a116a630255b8272664aee6f1965f4e5.setIcon(icon_abee14c1280fd04b17461c537f55945d);
+        
+    
+            marker_a116a630255b8272664aee6f1965f4e5.bindTooltip(
+                `<div>
+                     Furniture Showroom
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_066e1a5264d1f61cb586364083782def = L.marker(
+                [45.4665, 9.1968],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_fc3f9ce115d7c6529f52aa3b00c0a5b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_066e1a5264d1f61cb586364083782def.setIcon(icon_fc3f9ce115d7c6529f52aa3b00c0a5b1);
+        
+    
+            marker_066e1a5264d1f61cb586364083782def.bindTooltip(
+                `<div>
+                     Furniture Showroom
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09a4ccecc01713b1c5cebc073a981d41 = L.marker(
+                [45.4659, 9.1951],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_e13b040c8cdb7125cf1582f89a48353d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_09a4ccecc01713b1c5cebc073a981d41.setIcon(icon_e13b040c8cdb7125cf1582f89a48353d);
+        
+    
+            marker_09a4ccecc01713b1c5cebc073a981d41.bindTooltip(
+                `<div>
+                     Furniture Showroom
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_313bbb2e3f2cb02351c6c2ae174c43e5 = L.marker(
+                [45.4667, 9.1971],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_0be88a26f6798ffe7e1a4345b696ed9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_313bbb2e3f2cb02351c6c2ae174c43e5.setIcon(icon_0be88a26f6798ffe7e1a4345b696ed9a);
+        
+    
+            marker_313bbb2e3f2cb02351c6c2ae174c43e5.bindTooltip(
+                `<div>
+                     Furniture Showroom
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a1a212af454f24d5b3755faf74d50ca = L.marker(
+                [45.4666, 9.1962],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_a4f9507cb0c602afcc9eb5cb1785062c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9a1a212af454f24d5b3755faf74d50ca.setIcon(icon_a4f9507cb0c602afcc9eb5cb1785062c);
+        
+    
+            marker_9a1a212af454f24d5b3755faf74d50ca.bindTooltip(
+                `<div>
+                     Furniture Showroom
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99b91ae7cc65c55f01e9227116b43c42 = L.marker(
+                [45.4654, 9.1938],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_94647d85dd96c5f05bc69e53efcd02ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_99b91ae7cc65c55f01e9227116b43c42.setIcon(icon_94647d85dd96c5f05bc69e53efcd02ad);
+        
+    
+            marker_99b91ae7cc65c55f01e9227116b43c42.bindTooltip(
+                `<div>
+                     Furniture Showroom
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf2e77583ef43b16a8f7fdf1f25b1c93 = L.marker(
+                [45.4629, 9.1847],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_751b8fd11586c054add7c0e53e83828b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cf2e77583ef43b16a8f7fdf1f25b1c93.setIcon(icon_751b8fd11586c054add7c0e53e83828b);
+        
+    
+            marker_cf2e77583ef43b16a8f7fdf1f25b1c93.bindTooltip(
+                `<div>
+                     Furniture Showroom
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74c424a22f9ca5827f4a99657e2cbb3c = L.marker(
+                [45.4652, 9.1923],
+                {}
+            ).addTo(map_eb8c0845efc4474ed63fbf36679be9d0);
+        
+    
+            var icon_4adaf530edde1f37eb6bcc8c2f69adfe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_74c424a22f9ca5827f4a99657e2cbb3c.setIcon(icon_4adaf530edde1f37eb6bcc8c2f69adfe);
+        
+    
+            marker_74c424a22f9ca5827f4a99657e2cbb3c.bindTooltip(
+                `<div>
+                     Furniture Showroom
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

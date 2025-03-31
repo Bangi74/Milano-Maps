@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f136636e7a76da05d62a96ffc8ea8dc6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f136636e7a76da05d62a96ffc8ea8dc6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f136636e7a76da05d62a96ffc8ea8dc6 = L.map(
+                "map_f136636e7a76da05d62a96ffc8ea8dc6",
+                {
+                    center: [45.4666, 9.1959],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_25d48923c5f644504642509eb1a126a9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var marker_a2330dcd5318d0d51a575c98aa7a3550 = L.marker(
+                [45.4666, 9.1959],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_7d48202f325c0dfed021b7db2fabe5c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a2330dcd5318d0d51a575c98aa7a3550.setIcon(icon_7d48202f325c0dfed021b7db2fabe5c3);
+        
+    
+            marker_a2330dcd5318d0d51a575c98aa7a3550.bindTooltip(
+                `<div>
+                     Start: Via Durini
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var rectangle_b28db0f40efe11eac378393d4d363f39 = L.rectangle(
+                [[45.4669, 9.1948], [45.4657, 9.1975]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            rectangle_b28db0f40efe11eac378393d4d363f39.bindTooltip(
+                `<div>
+                     Via Durini
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73d7010f07b24401efbdabf51ff07011 = L.marker(
+                [45.4641, 9.1966],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_867c781b69c64a94dce95681b8c13eac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_73d7010f07b24401efbdabf51ff07011.setIcon(icon_867c781b69c64a94dce95681b8c13eac);
+        
+    
+            marker_73d7010f07b24401efbdabf51ff07011.bindTooltip(
+                `<div>
+                     Trattoria da Pino, Via Cerva
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6741c494450fb96cc430295514bbbc92 = L.marker(
+                [45.4665, 9.1968],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_23c8b26e5003fdfb85d6c60d922dd8d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6741c494450fb96cc430295514bbbc92.setIcon(icon_23c8b26e5003fdfb85d6c60d922dd8d7);
+        
+    
+            marker_6741c494450fb96cc430295514bbbc92.bindTooltip(
+                `<div>
+                     Cassina (Via Durini 16)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a4e4aa1fe5c0787eb99f82dd8cfcf23 = L.marker(
+                [45.4659, 9.1951],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_3ac2099d6cd662899418ce71c868618b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9a4e4aa1fe5c0787eb99f82dd8cfcf23.setIcon(icon_3ac2099d6cd662899418ce71c868618b);
+        
+    
+            marker_9a4e4aa1fe5c0787eb99f82dd8cfcf23.bindTooltip(
+                `<div>
+                     Molteni|Dada (Corso Europa 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2abe9bd04c144b95ba527524a460048e = L.marker(
+                [45.4667, 9.1971],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_c8d36a513d14c155d68c32a9c5e66d8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2abe9bd04c144b95ba527524a460048e.setIcon(icon_c8d36a513d14c155d68c32a9c5e66d8e);
+        
+    
+            marker_2abe9bd04c144b95ba527524a460048e.bindTooltip(
+                `<div>
+                     Natuzzi (Via Durini 24)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3feb5a9775010c273c53d4af3ec72759 = L.marker(
+                [45.4666, 9.1962],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_ff24f17fbe5daa0d044f5469d87aa0d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3feb5a9775010c273c53d4af3ec72759.setIcon(icon_ff24f17fbe5daa0d044f5469d87aa0d0);
+        
+    
+            marker_3feb5a9775010c273c53d4af3ec72759.bindTooltip(
+                `<div>
+                     B&B Italia (Via Durini 14)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d06d450794d02636385f8b37bd64034 = L.marker(
+                [45.4654, 9.1938],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_d5c590d087911b773819a23a3abc5ab3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d06d450794d02636385f8b37bd64034.setIcon(icon_d5c590d087911b773819a23a3abc5ab3);
+        
+    
+            marker_3d06d450794d02636385f8b37bd64034.bindTooltip(
+                `<div>
+                     Porro (Via Visconti di Modrone 29)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de07baa39f4636ab4a961721298e4c76 = L.marker(
+                [45.4629, 9.1847],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_150542ec1c458e08977cb6dce36600ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_de07baa39f4636ab4a961721298e4c76.setIcon(icon_150542ec1c458e08977cb6dce36600ef);
+        
+    
+            marker_de07baa39f4636ab4a961721298e4c76.bindTooltip(
+                `<div>
+                     Barovier&Toso (Via Durini 5)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bbf5238e5801d1390bd4d57932f4e79 = L.marker(
+                [45.4652, 9.1923],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_0d13cbfb7103fa42f2b61e146d2b6375 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1bbf5238e5801d1390bd4d57932f4e79.setIcon(icon_0d13cbfb7103fa42f2b61e146d2b6375);
+        
+    
+            marker_1bbf5238e5801d1390bd4d57932f4e79.bindTooltip(
+                `<div>
+                     Roche Bobois (Via Felice Cavallotti 14)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_281fd9373e54bec3f0f869bc693aff68 = L.marker(
+                [45.4672, 9.2003],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_9c4a98e2d7ff6a22b2c13a9b1c8b89f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_281fd9373e54bec3f0f869bc693aff68.setIcon(icon_9c4a98e2d7ff6a22b2c13a9b1c8b89f0);
+        
+    
+            marker_281fd9373e54bec3f0f869bc693aff68.bindTooltip(
+                `<div>
+                     Arclinea (Corso Monforte 28)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a5efae68d3d44a0289bc191e0d28ef1 = L.marker(
+                [45.467, 9.199],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_377e354a9b7bd036f5335f9706150e57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4a5efae68d3d44a0289bc191e0d28ef1.setIcon(icon_377e354a9b7bd036f5335f9706150e57);
+        
+    
+            marker_4a5efae68d3d44a0289bc191e0d28ef1.bindTooltip(
+                `<div>
+                     Boffi|De Padova (Via Santa Cecilia 7)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c4af13132dc53d98961af436dc6e371 = L.marker(
+                [45.4635, 9.1869],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_d8d6d8c5c12bca346098c47655efb8ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0c4af13132dc53d98961af436dc6e371.setIcon(icon_d8d6d8c5c12bca346098c47655efb8ac);
+        
+    
+            marker_0c4af13132dc53d98961af436dc6e371.bindTooltip(
+                `<div>
+                     Cimento (Via Fatebenefratelli 9)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99bc0c373394bd1b9d557a63ef5ebc21 = L.marker(
+                [45.4639, 9.188],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_f7aca61a77a4cba12866bddf4e719f2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_99bc0c373394bd1b9d557a63ef5ebc21.setIcon(icon_f7aca61a77a4cba12866bddf4e719f2d);
+        
+    
+            marker_99bc0c373394bd1b9d557a63ef5ebc21.bindTooltip(
+                `<div>
+                     De Castelli (Via Visconti di Modrone 20)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a4025d87f37472ca036f1fc1b00abcd = L.marker(
+                [45.4632, 9.1858],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_8ad997971fe725e497f70b9fba63baba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3a4025d87f37472ca036f1fc1b00abcd.setIcon(icon_8ad997971fe725e497f70b9fba63baba);
+        
+    
+            marker_3a4025d87f37472ca036f1fc1b00abcd.bindTooltip(
+                `<div>
+                     Ethimo (Corso Monforte 15)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b6debe86f1e6a259906bb364cef9c2d = L.marker(
+                [45.4649, 9.1912],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_80779d278d205a5bd35c6889fd9226e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b6debe86f1e6a259906bb364cef9c2d.setIcon(icon_80779d278d205a5bd35c6889fd9226e2);
+        
+    
+            marker_1b6debe86f1e6a259906bb364cef9c2d.bindTooltip(
+                `<div>
+                     Gallotti&Radice (Via Felice Cavallotti 8)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd9cfaf95c0ccf3107e3a448f3958f04 = L.marker(
+                [45.4645, 9.1891],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_c1287f0b547b8838e1092003d4bdcc9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cd9cfaf95c0ccf3107e3a448f3958f04.setIcon(icon_c1287f0b547b8838e1092003d4bdcc9a);
+        
+    
+            marker_cd9cfaf95c0ccf3107e3a448f3958f04.bindTooltip(
+                `<div>
+                     Listone Giordano (Via Santa Cecilia 6)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b54fd9795254b05c6424576d0aaa002 = L.marker(
+                [45.4647, 9.1902],
+                {}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+    
+            var icon_735fc314becccf7769a79bf19747fe1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b54fd9795254b05c6424576d0aaa002.setIcon(icon_735fc314becccf7769a79bf19747fe1f);
+        
+    
+            marker_6b54fd9795254b05c6424576d0aaa002.bindTooltip(
+                `<div>
+                     Marazzi (Via Borgogna 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_938849c7b51c094e78e33a0b3fa6aacf = L.polyline(
+                [[45.4666, 9.1959], [45.4665, 9.1968], [45.4659, 9.1951], [45.4667, 9.1971], [45.4666, 9.1962], [45.4654, 9.1938], [45.4629, 9.1847], [45.4652, 9.1923], [45.4672, 9.2003], [45.467, 9.199], [45.4635, 9.1869], [45.4639, 9.188], [45.4632, 9.1858], [45.4649, 9.1912], [45.4645, 9.1891], [45.4647, 9.1902]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_f136636e7a76da05d62a96ffc8ea8dc6);
+        
+</script>
+</html>
